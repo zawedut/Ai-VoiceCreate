@@ -1,0 +1,7 @@
+# URLs Queue - ใส่ลิงก์ YouTube/TikTok ที่นี่ (บรรทัดละลิงก์)
+# รัน: python main.py
+
+https://www.youtube.com/shorts/3ojno8gN5Ro
+https://www.youtube.com/shorts/jcSPjpCKMWA
+https://www.youtube.com/shorts/Y1weKbdmTb0
+https://www.youtube.com/shorts/iRGvJq5e3IM

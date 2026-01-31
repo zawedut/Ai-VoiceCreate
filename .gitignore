@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+env/
+venv/
+.venv/
+pip-wheel-metadata/
+*.egg-info/
+
+# Environment
+.env
+.env.* 
+secrets/
+credentials.json
+client_secret*.json
+
+# VSCode
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Media / outputs / temp
+temp/
+tmp/
+*.log
+*.sqlite3
+*.mp4
+*.pickle
+*.pickle3
+
+# Node dependencies
+package-lock.json
+node_modules/
+
+# Build
+dist/
+build/
+*.egg

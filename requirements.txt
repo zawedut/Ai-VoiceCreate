@@ -1,0 +1,30 @@
+# AI Video Factory - Requirements
+# Core
+edge-tts>=6.1.0
+yt-dlp>=2023.11.16
+moviepy==1.0.3
+decorator==4.4.2
+pillow<11.0
+numpy
+nest-asyncio>=1.5.8
+
+# AI - Gemini
+google-generativeai>=0.3.0
+google-api-core>=2.15.0
+
+# Environment
+python-dotenv>=1.0.0
+
+# Testing
+pytest>=7.4.0
+pytest-asyncio>=0.21.0
+
+# Google Drive Cloud API
+google-api-python-client>=2.0.0
+google-auth-httplib2>=0.1.0
+google-auth-oauthlib>=1.0.0
+
+# API Server
+fastapi>=0.109.0
+uvicorn>=0.27.0
+python-multipart>=0.0.9

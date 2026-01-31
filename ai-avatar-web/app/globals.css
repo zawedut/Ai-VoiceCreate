@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #050505;
+    /* Deep black/slate */
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+  background-image:
+    radial-gradient(circle at 50% 0%, rgba(114, 46, 209, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 0% 50%, rgba(19, 194, 194, 0.1) 0%, transparent 50%);
+  background-attachment: fixed;
+}
+
+/* Antigravity Glassmorphism Utilities */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.36);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.36);
+  @apply rounded-3xl p-6 transition-all duration-300 hover:border-white/20;
+}
+
+.glass-nav {
+  background: rgba(5, 5, 5, 0.7);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.glass-modal .ant-modal-content {
+  background: #141414 !important;
+  border: 1px solid #303030 !important;
+  backdrop-filter: blur(16px);
+}
+
+.glass-modal .ant-modal-header {
+  background: transparent !important;
+}
+
+.glass-modal .ant-modal-title {
+  color: white !important;
+}
+
+.glass-modal .ant-modal-close {
+  color: rgba(255, 255, 255, 0.45) !important;
+}
+
+.glass-modal .ant-modal-close:hover {
+  color: white !important;
+}
